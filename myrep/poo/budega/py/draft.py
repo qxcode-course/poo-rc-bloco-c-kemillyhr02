@@ -3,12 +3,9 @@ class Pessoa:
         self.nome = nome
     
     def __str__(self)-> str:
-        def toString(Pessoa: Pessoa | None)->str:
-            if Pessoa is None:
-                return "---"
-        return str(Pessoa)
+            return self.nome
     def getNome(self):
-        return self.nome
+         
 
 class Market:
     def __init__(self, caixas: int):
@@ -17,8 +14,9 @@ class Market:
 
     def toString(self):
         if self.caixas is []:
-            return "self.caixas: -----, -----"
-        return ""
+            return f"self.caixas:[-----, -----]"
+        return f"[self.nome, self.nome, self.nome]"
+    
             
 
 
