@@ -32,3 +32,9 @@
 2025-11-04 15:09:43, EXEC, v:1, k:poo@budega, mode:FULL, rate:0, size:88
 2025-11-04 15:09:54, EXEC, v:1, k:poo@budega, mode:FULL, rate:100, size:88
 2025-11-04 15:09:55, MOVE, v:1, k:poo@budega, mode:BACK
+2025-11-04 15:14:02, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-04 15:14:03, EXEC, v:1, k:poo@array, mode:LOCK, rate:100, size:0
+2025-11-04 15:14:04, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-04 15:14:40, MOVE, v:1, k:poo@junkfood, mode:DOWN
+2025-11-04 15:14:40, MOVE, v:1, k:poo@junkfood, mode:PICK
+2025-11-04 15:14:41, MOVE, v:1, k:poo@junkfood, mode:BACK
