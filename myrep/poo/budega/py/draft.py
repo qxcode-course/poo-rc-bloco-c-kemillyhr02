@@ -1,60 +1,60 @@
 class Pessoa:
     def __init__(self, nome: str):
-        self.nome = nome
+        self.__nome = nome
     
     def __str__(self)-> str:
-            return self.nome
+            return self.__nome
     def getNome(self) -> str:
-         return self.nome
+         return self.__nome
 
 class Market:
     def __init__(self, caixas: int):
-        self.espera = []
-        self.caixas = [None]*caixas
+        self.__espera = []
+        self.__caixas = [None]*caixas
 
     def __str__(self) -> str:
         ans = "Caixas: ["
-        for n, p in enumerate(self.caixas):
+        for n, p in enumerate(self.__caixas):
             if p is None:
                 ans+="-----"
             else:
                 ans+=p.getNome()
-            if n <len(self.caixas)-1:
+            if n <len(self.__caixas)-1:
                 ans+= ", "
         ans+="]\nEspera: ["
-        for n, p in enumerate(self.espera):
+        for n, p in enumerate(self.__espera):
             if p is None: 
                 ans+="-----"
             else:
                 ans+=p.getNome()
-            if n<len(self.espera)-1:
+            if n<len(self.__espera)-1:
                 ans+=", "
         ans +="]"
         return ans
     
     def arrive(self, person:Pessoa):
-        self.espera.append(person)
+        self.__espera.append(person)
 
     def call(self, index:int):
-        if not self.espera:
+        if not self.__espera:
             print(f"fail: sem clientes")
             return 
-        if self.caixas[index] is not None:
+        if self.__caixas[index] is not None:
             print(f"fail: caixa ocupado")
             return
-        self.caixas[index]=self.espera[0]
-        self.espera.pop(0)   
+        self.__caixas[index]=self.__espera[0]
+        self.__espera.pop(0)   
 
 
     def finish(self, index:int):
-        if len(self.caixas) <= index:
+        if len(self.__caixas) <= index:
             print(f"fail: caixa inexistente")
             return 
-        if self.caixas[index] is None:
+        if self.__caixas[index] is None:
             print(f"fail: caixa vazio")
             return
-        pessoa = self.caixas[index]
-        self.caixas[index] = None
+        pessoa = self.__caixas[index]
+        self.__caixas[index] = None
         return pessoa
 
 def main():
