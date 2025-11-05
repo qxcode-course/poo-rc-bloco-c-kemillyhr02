@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-11-04_15-14-03",
-            "content": "",
+            "content": "@@ -1,69 +0,0 @@\n-k=%5B%5D%0Ak1=%5B%2240%22, %22oi%22, %22tarr%22%5D%0Aprint(f%22Tamanho do array k1: %7Blen(k1)%7D%22)\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-11-05_14-25-52",
+            "content": "k=[]\nk1=[\"40\", \"oi\", \"tarr\"]\nprint(f\"Tamanho do array k1: {len(k1)}\")",
+            "lines": "3"
         }
     ]
 }
