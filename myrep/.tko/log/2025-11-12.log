@@ -37,3 +37,33 @@
 2025-11-12 00:34:51, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:0
 2025-11-12 00:34:53, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0
 2025-11-12 00:34:58, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-12 00:38:10, SELF, v:1, k:poo@array
+2025-11-12 13:47:38, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-12 13:47:39, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:40, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:40, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:40, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:40, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:41, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:41, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:41, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:41, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:41, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:47, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:47, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:47, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:48, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:48, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 13:47:50, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-12 13:48:05, SELF, v:1, k:poo@array
+2025-11-12 13:58:50, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-12 13:59:04, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:93
+2025-11-12 13:59:42, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:93
+2025-11-12 14:00:24, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:94
+2025-11-12 14:04:28, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:98
+2025-11-12 14:04:34, EXEC, v:1, k:poo@array, mode:FREE
+2025-11-12 14:42:11, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-12 14:42:30, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-12 14:42:31, EXEC, v:1, k:poo@array, mode:LOCK, rate:0, size:111
+2025-11-12 14:42:32, EXEC, v:1, k:poo@array, mode:LOCK, rate:0
+2025-11-12 14:42:34, MOVE, v:1, k:poo@array, mode:BACK

@@ -552,8 +552,33 @@
         },
         {
             "label": "2025-11-12_00-34-12",
-            "content": "import random\n#array vazio\nn= []\nary= [\"py\", \"tr\", \"yk\", \"op\"]\nprint(f\"tamanho da lista: {len(ary)}\")\n\n#final\nary.append(\"my\")\nprint(f\"adicionar ao final: {ary}\")\nary.pop(4)\nprint(f\"remover ao final: {ary}\")\n\n\n#inicio\nary.insert(0, \"tvy\")\nprint(f\"adicionar ao inicio: {ary}\")\nary.pop(0)\nprint(f\"remover o inicio: {ary}\")\n\n \n#especifica\nary.insert(3,\"lj\")\nary.pop(2)\nprint(f\" lista modificada: {ary}\")\n\n\n#join\nline= \" \".join(ary)\nprint(f\"formata\u00e7\u00e3o: {line}\")\n\n\n#0-n\nn1= 10\nl=[]\nfor i in range (0, n1+1):\n    l.append(i)\nprint(f\"sequencial de numeros: {l}\")\n\n\nprint(random.randint(1, 100))\n\n#aleatorio\nl=[]\nfor i in range (0, 5):\n    l.append(random.randint(0, 99))\nprint(f\"valores aleatorios: {l}\")\nprint(f\"indice 1: {l[1]}\")\n\n\n#for-range\nfor i in l:\n    print(f\"{i} -> \", end=\"\")\nprint(\"\")\n#for indexado\nfor i in range(0, len(l)):\n    print(f\"{l[i]} -> \", end=\"\")\n\n\nl = [10,20,30,40,50]\nsearch = 20\n\nfor i in l:\n    if i == search:\n        print(\"elemento achado\")\n#la\u00e7o \nl = [1,2,3,5,4]\ni=0\nfor i in l:\n    if i==4:\n        print(f\"achei {i-1}\")\n#fun\u00e7\u00e3o nativa\nl1= [3,8,5,9,4]\nn=8\nif i in l1:\n    print(f\"elemento achado {i}\")\nelse:\n    print(f\"nao achei nada\")\n\n#pares array\nn= [4,9,6,23,26,28,54,65]\nfor i in n:\n    if i%2==0:\n        print(i)\n\n#x_quadrado\n#n= [2,3,4,5,6]\n#for i in n:\n #   if i**2:\n#        print(i)\n\n\n\n",
+            "content": "@@ -1253,16 +1253,17 @@\n uadrado%0A\n+#\n n= %5B2,3,\n@@ -1273,26 +1273,9 @@\n ,6%5D%0A\n-l: list%5Bint%5D = %5B%5D%0A\n+#\n for \n@@ -1287,33 +1287,37 @@\n n:%0A \n+#\n    \n-l.append(i**2)%0A\n+if i**2:%0A#        \n print(\n-l\n+i\n )%0A%0A%0A\n",
             "lines": "92"
+        },
+        {
+            "label": "2025-11-12_13-59-04",
+            "content": "@@ -1242,17 +1242,8 @@\n nt(i\n-, end=%22 %22\n )%0A%0A#\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-12_13-59-42",
+            "content": "@@ -1248,26 +1248,16 @@\n end=%22 %22)\n-%0Aprint(%22%22)\n %0A%0A#x_qua\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-12_14-00-24",
+            "content": "@@ -1077,25 +1077,14 @@\n %5D%0An=\n-int(input())\n+8\n %0Aif \n-n\n+i\n  in \n@@ -1350,40 +1350,6 @@\n l)%0A%0A\n-#buscar e remover%0Al=%5B3,8,5,4,9%5D%0A%0A%0A\n %0A%0A\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-11-12_14-04-28",
+            "content": "@@ -1073,17 +1073,28 @@\n ,9,4%5D%0An=\n-8\n+int(input())\n %0Aif n in\n@@ -1127,17 +1127,17 @@\n achado %7B\n-n\n+i\n %7D%22)%0Aelse\n@@ -1391,279 +1391,10 @@\n ,4,9\n-,5%5D%0Avalor = 5%0Aif valor in l:%0A    l.remove(valor)%0Aprint(l)%0A%0A#remover todos x%0Al=%5B5,3,8,5,4,5,9,5,5%5D%0Avalor = 1%0Acontador=0%0Aif valor in l:%0A    for x in range(len(l)):%0A        if l%5Bx%5D==valor:%0A            contador+=1%0A    for x in range(contador):%0A        l.remove(valor)%0Aprint(l)%0A#\n+%5D%0A%0A%0A%0A\n %0A\n",
+            "lines": "98"
+        },
+        {
+            "label": "2025-11-12_14-42-31",
+            "content": "import random\n#array vazio\nn= []\nary= [\"py\", \"tr\", \"yk\", \"op\"]\nprint(f\"tamanho da lista: {len(ary)}\")\n\n#final\nary.append(\"my\")\nprint(f\"adicionar ao final: {ary}\")\nary.pop(4)\nprint(f\"remover ao final: {ary}\")\n\n\n#inicio\nary.insert(0, \"tvy\")\nprint(f\"adicionar ao inicio: {ary}\")\nary.pop(0)\nprint(f\"remover o inicio: {ary}\")\n\n \n#especifica\nary.insert(3,\"lj\")\nary.pop(2)\nprint(f\" lista modificada: {ary}\")\n\n\n#join\nline= \" \".join(ary)\nprint(f\"formata\u00e7\u00e3o: {line}\")\n\n\n#0-n\nn1= 10\nl=[]\nfor i in range (0, n1+1):\n    l.append(i)\nprint(f\"sequencial de numeros: {l}\")\n\n\nprint(random.randint(1, 100))\n\n#aleatorio\nl=[]\nfor i in range (0, 5):\n    l.append(random.randint(0, 99))\nprint(f\"valores aleatorios: {l}\")\nprint(f\"indice 1: {l[1]}\")\n\n\n#for-range\nfor i in l:\n    print(f\"{i} -> \", end=\"\")\nprint(\"\")\n#for indexado\nfor i in range(0, len(l)):\n    print(f\"{l[i]} -> \", end=\"\")\n\n\nl = [10,20,30,40,50]\nsearch = 20\n\nfor i in l:\n    if i == search:\n        print(\"elemento achado\")\n#la\u00e7o \nl = [1,2,3,5,4]\ni=0\nfor i in l:\n    if i==4:\n        print(f\"achei {i-1}\")\n#fun\u00e7\u00e3o nativa\nl1= [3,8,5,9,4]\nn=8\nif n in l1:\n    print(f\"elemento achado {n}\")\nelse:\n    print(f\"nao achei nada\")\n\n#pares array\nn= [4,9,6,23,26,28,54,65]\nfor i in n:\n    if i%2==0:\n        print(i, end=\" \")\nprint(\"\")\n\n#x_quadrado\nn= [2,3,4,5,6]\nl: list[int] = []\nfor i in n:\n    l.append(i**2)\nprint(l)\n\n#buscar e remover\nl=[3,8,5,4,9,5]\nvalor = 5\nif valor in l:\n    l.remove(valor)\nprint(l)\n\n#remover todos x\nl=[5,3,8,5,4,5,9,5,5]\nvalor = 1\ncontador=0\nif valor in l:\n    for x in range(len(l)):\n        if l[x]==valor:\n            contador+=1\n    for x in range(contador):\n        l.remove(valor)\nprint(l)\n#\n",
+            "lines": "111"
         }
     ]
 }

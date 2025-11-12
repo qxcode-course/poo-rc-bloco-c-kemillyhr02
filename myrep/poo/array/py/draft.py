@@ -71,8 +71,8 @@ for i in l:
 #função nativa
 l1= [3,8,5,9,4]
 n=8
-if i in l1:
-    print(f"elemento achado {i}")
+if n in l1:
+    print(f"elemento achado {n}")
 else:
     print(f"nao achei nada")
 
@@ -80,13 +80,32 @@ else:
 n= [4,9,6,23,26,28,54,65]
 for i in n:
     if i%2==0:
-        print(i)
+        print(i, end=" ")
+print("")
 
 #x_quadrado
-#n= [2,3,4,5,6]
-#for i in n:
- #   if i**2:
-#        print(i)
+n= [2,3,4,5,6]
+l: list[int] = []
+for i in n:
+    l.append(i**2)
+print(l)
 
+#buscar e remover
+l=[3,8,5,4,9,5]
+valor = 5
+if valor in l:
+    l.remove(valor)
+print(l)
 
-
+#remover todos x
+l=[5,3,8,5,4,5,9,5,5]
+valor = 1
+contador=0
+if valor in l:
+    for x in range(len(l)):
+        if l[x]==valor:
+            contador+=1
+    for x in range(contador):
+        l.remove(valor)
+print(l)
+#
