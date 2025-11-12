@@ -63,7 +63,6 @@ def main():
         line = input()
         print(f"${line}")
         args=line.split()
-
         if args[0]=="end":
             break
         elif args[0]=="init":
@@ -80,9 +79,3 @@ def main():
         else:
             print(f"fail: comando invalido")
 main()
-
-    
-            
-
-
-

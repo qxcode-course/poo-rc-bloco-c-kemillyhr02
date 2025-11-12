@@ -82,8 +82,38 @@
         },
         {
             "label": "2025-11-04_15-09-54",
-            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.__nome = nome\n    \n    def __str__(self)-> str:\n            return self.__nome\n    def getNome(self) -> str:\n         return self.__nome\n\nclass Market:\n    def __init__(self, caixas: int):\n        self.__espera = []\n        self.__caixas = [None]*caixas\n\n    def __str__(self) -> str:\n        ans = \"Caixas: [\"\n        for n, p in enumerate(self.__caixas):\n            if p is None:\n                ans+=\"-----\"\n            else:\n                ans+=p.getNome()\n            if n <len(self.__caixas)-1:\n                ans+= \", \"\n        ans+=\"]\\nEspera: [\"\n        for n, p in enumerate(self.__espera):\n            if p is None: \n                ans+=\"-----\"\n            else:\n                ans+=p.getNome()\n            if n<len(self.__espera)-1:\n                ans+=\", \"\n        ans +=\"]\"\n        return ans\n    \n    def arrive(self, person:Pessoa):\n        self.__espera.append(person)\n\n    def call(self, index:int):\n        if not self.__espera:\n            print(f\"fail: sem clientes\")\n            return \n        if self.__caixas[index] is not None:\n            print(f\"fail: caixa ocupado\")\n            return\n        self.__caixas[index]=self.__espera[0]\n        self.__espera.pop(0)   \n\n\n    def finish(self, index:int):\n        if len(self.__caixas) <= index:\n            print(f\"fail: caixa inexistente\")\n            return \n        if self.__caixas[index] is None:\n            print(f\"fail: caixa vazio\")\n            return\n        pessoa = self.__caixas[index]\n        self.__caixas[index] = None\n        return pessoa\n\ndef main():\n    market= None\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args=line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"init\":\n            market=Market(int(args[1]))\n        elif args[0]==\"show\":\n            print(market)\n        elif args[0]==\"arrive\":\n            pessoa=Pessoa(str(args[1]))\n            market.arrive(pessoa)\n        elif args[0]==\"call\":\n            market.call(int(args[1]))\n        elif args[0]==\"finish\":\n            market.finish(int(args[1]))\n        else:\n            print(f\"fail: comando invalido\")\nmain()\n\n    \n            \n\n\n\n",
+            "content": "@@ -2196,8 +2196,30 @@\n %0Amain()%0A\n+%0A    %0A            %0A%0A%0A%0A\n",
             "lines": "88"
+        },
+        {
+            "label": "2025-11-11_13-53-19",
+            "content": "@@ -2191,12 +2191,13 @@\n ido%22)%0Amain()\n+%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-11_13-53-42",
+            "content": "@@ -2195,9 +2195,8 @@\n )%0Amain()\n-%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-11_14-19-10",
+            "content": "@@ -1708,24 +1708,25 @@\n ine.split()%0A\n+%0A\n         if a\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-11_14-21-56",
+            "content": "@@ -1616,19 +1616,20 @@\n market= \n-int\n+None\n %0A    whi\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-11-11_14-22-24",
+            "content": "@@ -1616,20 +1616,19 @@\n market= \n-None\n+int\n %0A    whi\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-11-11_14-23-16",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.__nome = nome\n    \n    def __str__(self)-> str:\n            return self.__nome\n    def getNome(self) -> str:\n         return self.__nome\n\nclass Market:\n    def __init__(self, caixas: int):\n        self.__espera = []\n        self.__caixas = [None]*caixas\n\n    def __str__(self) -> str:\n        ans = \"Caixas: [\"\n        for n, p in enumerate(self.__caixas):\n            if p is None:\n                ans+=\"-----\"\n            else:\n                ans+=p.getNome()\n            if n <len(self.__caixas)-1:\n                ans+= \", \"\n        ans+=\"]\\nEspera: [\"\n        for n, p in enumerate(self.__espera):\n            if p is None: \n                ans+=\"-----\"\n            else:\n                ans+=p.getNome()\n            if n<len(self.__espera)-1:\n                ans+=\", \"\n        ans +=\"]\"\n        return ans\n    \n    def arrive(self, person:Pessoa):\n        self.__espera.append(person)\n\n    def call(self, index:int):\n        if not self.__espera:\n            print(f\"fail: sem clientes\")\n            return \n        if self.__caixas[index] is not None:\n            print(f\"fail: caixa ocupado\")\n            return\n        self.__caixas[index]=self.__espera[0]\n        self.__espera.pop(0)   \n\n\n    def finish(self, index:int):\n        if len(self.__caixas) <= index:\n            print(f\"fail: caixa inexistente\")\n            return \n        if self.__caixas[index] is None:\n            print(f\"fail: caixa vazio\")\n            return\n        pessoa = self.__caixas[index]\n        self.__caixas[index] = None\n        return pessoa\n\ndef main():\n    market= None\n    while True:\n        line = input()\n        print(f\"${line}\")\n        args=line.split()\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"init\":\n            market=Market(int(args[1]))\n        elif args[0]==\"show\":\n            print(market)\n        elif args[0]==\"arrive\":\n            pessoa=Pessoa(str(args[1]))\n            market.arrive(pessoa)\n        elif args[0]==\"call\":\n            market.call(int(args[1]))\n        elif args[0]==\"finish\":\n            market.finish(int(args[1]))\n        else:\n            print(f\"fail: comando invalido\")\nmain()\n",
+            "lines": "81"
         }
     ]
 }
