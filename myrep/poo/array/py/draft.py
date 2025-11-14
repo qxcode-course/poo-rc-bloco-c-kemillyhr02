@@ -110,3 +110,16 @@ print(l1)
 print(f"valor removido: {valor}")
 
 
+#verificar funções
+l = [5, 8, 1, 7,2,3,4]
+if 4 in l:
+    print("função de busca")
+
+#função para remover
+l.pop(2)
+
+l.sort()
+print(f"lista ordenada: {l}")
+
+random.shuffle(l)
+print(f"lista embaralhada: {l}")

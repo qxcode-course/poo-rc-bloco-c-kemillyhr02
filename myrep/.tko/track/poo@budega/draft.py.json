@@ -7,8 +7,113 @@
         },
         {
             "label": "2025-11-14_01-17-53",
-            "content": "class Market:\n    def __init__(self) :",
+            "content": "@@ -1,263 +1,4 @@\n-class Pessoa:%0A    def __init__(self, nome: str):%0A        self.__nome: str = nome%0A%0A    def getNome(self):%0A        return self.__nome%0A    %0A    def setNome(self, nome:str):%0A        self.__nome = nome%0A    %0A    def __str__(self):%0A        return f%22%7Bself.__nome%7D%22%0A%0A%0A\n clas\n@@ -7,17 +7,16 @@\n Market:%0A\n-%0A\n     def \n@@ -32,676 +32,7 @@\n self\n-, caixas: int =0 ):%0A        self.__caixas= %5BNone%5D*caixas%0A        self.__espera = %5B%5D%0A%0A    def __str__(self):%0A        caixas = %22, %22.join(%22-----%22 if i is None else i.getName() for i in self.__caixas)%0A        espera = %22, %22.join(%22-----%22 if i is None else i.getName() for i in self.__espera )%0A        return f%22Caixas: %5B%7Bcaixas%7D%5D%5CnEspera: %5B%7Bespera%7D%5D%22%0A    %0A%0Adef main():%0A    market=Market()%0A    while True:%0A        line= input()%0A        print(%22$%7Bline%7D%22)%0A        args=line.split()%0A%0A        if args%5B0%5D==%22end%22:%0A            break%0A        elif args%5B0%5D==%22init%22:%0A            market=Market(int(args%5B1%5D))%0A        elif args%5B0%5D==%22show%22:%0A            print(market)%0A            %0A%0Amain()%0A        \n+) :\n",
             "lines": "2"
+        },
+        {
+            "label": "2025-11-14_11-58-03",
+            "content": "@@ -722,17 +722,16 @@\n   print(\n-f\n %22$%7Bline%7D\n@@ -931,16 +931,28 @@\n market)%0A\n+            \n %0A%0Amain()\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-14_11-58-12",
+            "content": "@@ -636,88 +636,8 @@\n %7D%5D%22%0A\n-%0A    def arrive(self, pessoa:Pessoa):%0A        self.__espera.append(pessoa)%0A%0A    \n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-14_12-00-24",
+            "content": "@@ -1016,109 +1016,8 @@\n et)%0A\n-        elif args%5B0%5D==%22arrive%22:%0A            pessoa=Pessoa(args%5B1%5D)%0A            market.arrive(pessoa)%0A\n %0A%0Ama\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-14_12-02-02",
+            "content": "@@ -447,33 +447,33 @@\n None else i.getN\n-o\n+a\n me() for i in se\n@@ -544,17 +544,17 @@\n e i.getN\n-o\n+a\n me() for\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-14_12-02-23",
+            "content": "@@ -716,353 +716,12 @@\n     \n-def call(self, index: int):%0A           if self.__espera== %5B%5D:%0A               print(f%22fail: sem clientes%22)%0A                return%0A           if self.__caixas%5Bindex%5D is not None:%0A               print(%22fail: caixa ocupado%22)%0A            %0A            self.__caixas%5Bindex%5D=self.__espera%5B0%5D%0A           self.__espera.pop(0)%0A           %0A                %0A\n+    \n %0A%0Ade\n@@ -1117,75 +1117,8 @@\n oa)%0A\n-        elif args%5B0%5D==%22call%22:%0A            market.call(int(args%5B1%5D))\n %0A%0Ama\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-14_12-11-17",
+            "content": "@@ -335,30 +335,13 @@\n as= \n-list%5BPessoa %7C None%5D= %5B\n+%5BNone\n %5D*ca\n@@ -370,29 +370,8 @@\n pera\n-: list%5BPessoa %7C None%5D\n  = %5B\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-13-39",
+            "content": "@@ -329,17 +329,17 @@\n __caixas\n-:\n+=\n  list%5BPe\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-13-55",
+            "content": "@@ -1041,25 +1041,24 @@\n %0A           \n- \n self.__esper\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-14-18",
+            "content": "@@ -823,25 +823,24 @@\n             \n- \n print(f%22fail\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-14-28",
+            "content": "@@ -980,33 +980,24 @@\n             \n-   return\n %0A           \n@@ -997,25 +997,16 @@\n         \n-%0A        \n self.__c\n@@ -1018,17 +1018,16 @@\n %5Bindex%5D=\n- \n self.__e\n@@ -1035,16 +1035,20 @@\n pera%5B0%5D%0A\n+    \n         \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-15-25",
+            "content": "@@ -396,16 +396,23 @@\n t%5BPessoa\n+ %7C None\n %5D = %5B%5D%0A%0A\n@@ -550,16 +550,41 @@\n  %22.join(\n+%22-----%22 if i is None else\n  i.getNo\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-14_12-16-36",
+            "content": "@@ -967,32 +967,79 @@\n rn%0A            %0A\n+        self.__caixas%5Bindex%5D= self.__espera%5B0%5D%0A\n         self.__e\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-14_12-17-06",
+            "content": "@@ -975,16 +975,44 @@\n        %0A\n+        self.__espera.pop(0)\n %0A       \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-17-12",
+            "content": "@@ -317,24 +317,26 @@\n        self.\n+__\n caixas: list\n@@ -371,24 +371,26 @@\n        self.\n+__\n espera: list\n@@ -502,24 +502,26 @@\n r i in self.\n+__\n caixas)%0A    \n@@ -566,24 +566,26 @@\n r i in self.\n+__\n espera )%0A   \n@@ -685,24 +685,26 @@\n        self.\n+__\n espera.appen\n@@ -761,24 +761,26 @@\n     if self.\n+__\n espera== %5B%5D:\n@@ -863,24 +863,26 @@\n     if self.\n+__\n caixas%5Bindex\n@@ -979,77 +979,8 @@\n    %0A\n-        self.caixas%5Bindex%5D= self.espera%5B0%5D%0A        self.espera.pop(0)\n %0A   \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-18-56",
+            "content": "@@ -736,32 +736,35 @@\n : int):%0A        \n+   \n if self.espera==\n@@ -768,16 +768,20 @@\n a== %5B%5D:%0A\n+    \n         \n@@ -817,39 +817,46 @@\n s%22)%0A            \n+   \n+ \n return%0A\n+   \n         if self.\n@@ -890,24 +890,27 @@\n             \n+   \n print(%22fail:\n@@ -926,16 +926,19 @@\n upado%22)%0A\n+   \n         \n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-14_12-20-16",
+            "content": "@@ -317,26 +317,24 @@\n        self.\n-__\n caixas: list\n@@ -369,26 +369,24 @@\n        self.\n-__\n espera: list\n@@ -392,23 +392,16 @@\n t%5BPessoa\n- %7C None\n %5D = %5B%5D%0A%0A\n@@ -498,26 +498,24 @@\n r i in self.\n-__\n caixas)%0A    \n@@ -541,33 +541,8 @@\n oin(\n-%22-----%22 if i is None else\n  i.g\n@@ -560,26 +560,24 @@\n r i in self.\n-__\n espera )%0A   \n@@ -677,26 +677,24 @@\n        self.\n-__\n espera.appen\n@@ -748,26 +748,24 @@\n     if self.\n-__\n espera== %5B%5D:\n@@ -837,26 +837,24 @@\n     if self.\n-__\n caixas%5Bindex\n@@ -909,16 +909,35 @@\n upado%22)%0A\n+            return%0A\n         \n@@ -954,18 +954,16 @@\n    self.\n-__\n caixas%5Bi\n@@ -968,23 +968,22 @@\n %5Bindex%5D=\n+ \n self.\n-__\n espera%5B0\n@@ -997,18 +997,16 @@\n    self.\n-__\n espera.p\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-14_12-20-59",
+            "content": "@@ -353,20 +353,16 @@\n None%5D= %5B\n-None\n %5D*caixas\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-21-19",
+            "content": "@@ -417,43 +417,8 @@\n = %5B%5D\n-%0A        self.__index: int = caixas\n %0A%0A  \n@@ -1063,287 +1063,8 @@\n    %0A\n-    def finish(self, index: int):%0A        if index %3C0 or index %3E self.__index:%0A            print(f%22fail: caixa inexistente%22)%0A            return%0A        if self.__caixas%5Bindex%5D is None:%0A            print(%22fail: caixa vazio%22)%0A            return%0A%0A        self.__caixas%5Bindex%5D= None%0A\n     \n@@ -1503,16 +1503,16 @@\n %22call%22:%0A\n+\n         \n@@ -1544,138 +1544,8 @@\n 1%5D))\n-%0A        elif args%5B0%5D==%22finish%22:%0A            market.finish(int(args%5B1%5D))%0A        else:%0A            print(%22fail: comando inv%C3%A1lido%22)\n %0A%0Ama\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-11-14_12-31-50",
+            "content": "@@ -994,35 +994,16 @@\n upado%22)%0A\n-            return%0A\n         \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-11-14_12-33-10",
+            "content": "@@ -1177,17 +1177,16 @@\n  index %3E\n-=\n  self.__\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-11-14_12-33-38",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.__nome: str = nome\n\n    def getNome(self):\n        return self.__nome\n    \n    def setNome(self, nome:str):\n        self.__nome = nome\n    \n    def __str__(self):\n        return f\"{self.__nome}\"\n\n\nclass Market:\n\n    def __init__(self, caixas: int =0 ):\n        self.__caixas: list[Pessoa | None]= [None]*caixas\n        self.__espera: list[Pessoa | None] = []\n        self.__index: int = caixas\n\n    def __str__(self):\n        caixas = \", \".join(\"-----\" if i is None else i.getNome() for i in self.__caixas)\n        espera = \", \".join(\"-----\" if i is None else i.getNome() for i in self.__espera )\n        return f\"Caixas: [{caixas}]\\nEspera: [{espera}]\"\n\n    def arrive(self, pessoa:Pessoa):\n        self.__espera.append(pessoa)\n\n    def call(self, index: int):\n        if self.__espera== []:\n            print(f\"fail: sem clientes\")\n            return\n        if self.__caixas[index] is not None:\n            print(\"fail: caixa ocupado\")\n            return\n            \n        self.__caixas[index]=self.__espera[0]\n        self.__espera.pop(0)\n           \n    def finish(self, index: int):\n        if index <0 or index >= self.__index:\n            print(f\"fail: caixa inexistente\")\n            return\n        if self.__caixas[index] is None:\n            print(\"fail: caixa vazio\")\n            return\n\n        self.__caixas[index]= None\n                \n\n\ndef main():\n    market=Market()\n    while True:\n        line= input()\n        print(f\"${line}\")\n        args=line.split()\n\n        if args[0]==\"end\":\n            break\n        elif args[0]==\"init\":\n            market=Market(int(args[1]))\n        elif args[0]==\"show\":\n            print(market)\n        elif args[0]==\"arrive\":\n            pessoa=Pessoa(args[1])\n            market.arrive(pessoa)\n        elif args[0]==\"call\":\n            market.call(int(args[1]))\n        elif args[0]==\"finish\":\n            market.finish(int(args[1]))\n        else:\n            print(\"fail: comando inv\u00e1lido\")\n\nmain()\n        ",
+            "lines": "77"
         }
     ]
 }

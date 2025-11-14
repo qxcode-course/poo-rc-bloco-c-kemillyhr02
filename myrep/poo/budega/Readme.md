@@ -57,7 +57,7 @@ Todos os comandos seguem o modelo `$comando arg1 arg2 ...`. Em caso de erro, uma
 
 #### Método `toString()`
 
-- Implemente o método `toString()` para retornar uma representação em string do estado atual do mercantil. Exemplo
+- Implemente                      o método `toString()` para retornar uma representação em string do estado atual do mercantil. Exemplo
 
 ```txt
 Caixas: [-----, -----]
