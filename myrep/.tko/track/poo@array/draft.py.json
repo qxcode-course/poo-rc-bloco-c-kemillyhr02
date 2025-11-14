@@ -287,8 +287,93 @@
         },
         {
             "label": "2025-11-13_20-44-38",
-            "content": "import random\n\nary=[]\nary= [1,2,3,4,5]\nprint(ary)\n#tamanhoary\nt= len(ary)\nprint(f\"tamanho: {t}\\n\")\n\n#add_remover_f\nprint(\"adicionar e remover final\")\nl1=[2,4,6,3,9]\nprint(l1)\nl2= l1\nl2.append(8) \nprint(l2)\nl3= l1\nl3.pop(4)\nprint(l3)\nprint(\"\\n\")\n\n#add_remover.i\nprint(\"adicionar e remover inicio\")\nl1= [4,9,6,7,5]\nprint(l1)\nl2=l1\nl2.append(3)\nprint(l2)\nl3=l1\nl3.remove(4)\nprint(l3)\nprint(\"\\n\")\nprint(\"add e remover posi\u00e7\u00e3o especifica\")\n#add_e_remover_espec\nl1=[1,2,3,5,6,7]\nprint(l1)\nl2=l1\nl2.insert(4,8)\nl3=l1\nl3.remove(2)\nprint(l2,l3)\nprint(\"\\n\")\n\n\n\n#join\nprint(\"join\")\nn = 10\nl1 = \" - \".join(str(i) for i in range(0, n+1))\nprint(l1)\nprint(\"\\n\")\n\n#random\nprint(\"random\")\nl = []\nfor i in range(0, 5):\n    l.append(random.randint(1,10))\nprint(f\"aleatorio: {l}\")\n\n#indicejoin python\nprint(f\"indice 2: {l[2]}\")\n\n\n#for-range\nl1 = [1,2,3,4,5]\nn = len(l1)\nfor i in range(0,n):\n    print(f\"-> {i} \", end=\"\")\nprint(\"\\n\")\n\n\n#procurar X\nl = [10, 20, 30 ,40 , 50]\ni = 0\nf = len(l)\nx = 40\nwhile i<f:\n    if  x == l[i]:\n        print(f\"achei!!! o valor {x}\\n\")\n    i+=1\n#array_pares\nl=[i for i in range(1,15) if i%2==0]\nprint(f\"os elementos pares sao {l}\")\n\n#indexado\nl = [i**2  for i in range(1, 11)]\nprint(f\"ao quadrado {l}\")\n\n",
+            "content": "@@ -644,75 +644,8 @@\n n%22)%0A\n-#cria_x_zero-n%0Al1=%5B1,2,3,6,8,9%5D%0Al=l1%0Al= list(range(0,n-1))%0Aprint(l)\n %0A#ra\n",
             "lines": "88"
+        },
+        {
+            "label": "2025-11-14_00-13-33",
+            "content": "@@ -659,26 +659,8 @@\n o-n%0A\n-print(%22zero a n%22)%0A\n l1=%5B\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-14_00-13-49",
+            "content": "@@ -673,17 +673,16 @@\n o a n%22)%0A\n-#\n l1=%5B1,2,\n@@ -690,17 +690,16 @@\n ,6,8,9%5D%0A\n-#\n l=l1%0Al= \n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-14_00-14-17",
+            "content": "@@ -673,16 +673,40 @@\n o a n%22)%0A\n+#l1=%5B1,2,3,6,8,9%5D%0A#l=l1%0A\n l= list(\n@@ -732,20 +732,8 @@\n (l)%0A\n-print(%22/n%22)%0A\n #ran\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-14_00-14-50",
+            "content": "@@ -707,25 +707,25 @@\n t(l)%0Aprint(%22\n-%5C\n+/\n n%22)%0A#random%0A\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-14_00-14-58",
+            "content": "@@ -1,1303 +1,54 @@\n-import random%0A%0Aary=%5B%5D%0Aary= %5B1,2,3,4,5%5D%0Aprint(ary)%0A#tamanhoary%0At= len(ary)%0Aprint(f%22tamanho: %7Bt%7D%5Cn%22)%0A%0A#add_remover_f%0Aprint(%22adicionar e remover final%22)%0Al1=%5B2,4,6,3,9%5D%0Aprint(l1)%0Al2= l1%0Al2.append(8) %0Aprint(l2)%0Al3= l1%0Al3.pop(4)%0Aprint(l3)%0Aprint(%22%5Cn%22)%0A%0A#add_remover.i%0Aprint(%22adicionar e remover inicio%22)%0Al1= %5B4,9,6,7,5%5D%0Aprint(l1)%0Al2=l1%0Al2.append(3)%0Aprint(l2)%0Al3=l1%0Al3.remove(4)%0Aprint(l3)%0Aprint(%22%5Cn%22)%0Aprint(%22add e remover posi%C3%A7%C3%A3o especifica%22)%0A#add_e_remover_espec%0Al1=%5B1,2,3,5,6,7%5D%0Aprint(l1)%0Al2=l1%0Al2.insert(4,8)%0Al3=l1%0Al3.remove(2)%0Aprint(l2,l3)%0Aprint(%22%5Cn%22)%0A%0A%0A%0A#join%0Aprint(%22join%22)%0An = 10%0Al1 = %22 - %22.join(str(i) for i in range(0, n+1))%0Aprint(l1)%0Aprint(%22%5Cn%22)%0A#cria_x_zero-n%0Aprint(%22zero a n%22)%0Al= list(range(0,n-1))%0Aprint(l)%0Aprint(%22%5Cn%22)%0A#random%0Aprint(%22random%22)%0Al = %5B%5D%0Afor i in range(0, 5):%0A    l.append(random.randint(1,10))%0Aprint(f%22aleatorio: %7Bl%7D%22)%0A%0A#indicejoin python%0Aprint(f%22indice 2: %7Bl%5B2%5D%7D%22)%0A%0A%0A#for-range%0Al1 = %5B1,2,3,4,5%5D%0An = len(l1)%0Afor i in range(0,n):%0A    print(f%22-%3E %7Bi%7D %22, end=%22%22)%0Aprint(%22%5Cn%22)%0A%0A%0A#procurar X usando la%C3%A7o%0Al = %5B10, 20, 30 ,40 , 50%5D%0Ai = 0%0Af = len(l)%0Ax = 40%0Awhile i%3Cf:%0A    if  x == l%5Bi%5D:%0A        print(f%22achei!!! o valor %7Bx%7D%5Cn%22)%0A    i+=1%0A#array_pares%0Al=%5Bi for i in range(1,15) if i%252==0%5D%0Aprint(f%22os elementos pares sao %7Bl%7D%22)%0A%0A#indexado%0Al = %5Bi**2  for i in range(1, 11)%5D%0Aprint(f%22ao quadrado %7Bl%7D%22)%0A\n+@@ -998,20 +998,8 @@%0A ar X%0A- usando la%25C3%25A7o%0A %250Al =\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_00-20-46",
+            "content": "@@ -1,32 +1,65 @@\n-import random%0A%0Aary=%5B%5D%0A\n+@@ -1,1321 +1,64 @@%0A-import random%250A%250Aary=%255B%255D%250A\n ary= \n-%5B\n+%255B\n 1,2,\n@@ -63,18 +63,22 @@\n ,2,3,4,5\n-%5D%0A\n+%255D%250A\n print(ar\n@@ -79,17 +79,19 @@\n int(ary)\n-%0A\n+%250A\n #tamanho\n@@ -93,17 +93,19 @@\n manhoary\n-%0A\n+%250A\n t= len(a\n@@ -107,25 +107,29 @@\n len(ary)\n-%0A\n+%250A\n print(f\n-%22\n+%2522\n tamanho:\n@@ -133,17 +133,29 @@\n ho: \n-%7Bt%7D%5Cn%22)%0A%0A\n+%257Bt%257D%255Cn%2522)%250A%250A\n #add\n@@ -164,24 +164,28 @@\n emover_f\n-%0A\n+%250A\n print(\n-%22\n+%2522\n adiciona\n@@ -205,15 +205,21 @@\n inal\n-%22)%0Al1=%5B\n+%2522)%250Al1=%255B\n 2,4,\n@@ -223,18 +223,22 @@\n ,4,6,3,9\n-%5D%0A\n+%255D%250A\n print(l1\n@@ -242,16 +242,20 @@\n (l1)\n-%0A\n+%250A\n l2= l1\n-%0A\n+%250A\n l2.a\n@@ -263,17 +263,19 @@\n pend(8) \n-%0A\n+%250A\n print(l2\n@@ -279,16 +279,20 @@\n (l2)\n-%0A\n+%250A\n l3= l1\n-%0A\n+%250A\n l3.p\n@@ -296,17 +296,19 @@\n 3.pop(4)\n-%0A\n+%250A\n print(l3\n@@ -308,30 +308,42 @@\n rint(l3)\n-%0A\n+%250A\n print(\n-%22%5Cn%22)%0A%0A\n+%2522%255Cn%2522)%250A%250A\n #add_rem\n@@ -348,24 +348,28 @@\n emover.i\n-%0A\n+%250A\n print(\n-%22\n+%2522\n adiciona\n@@ -390,16 +390,22 @@\n icio\n-%22)%0A\n+%2522)%250A\n l1= \n-%5B\n+%255B\n 4,9,\n@@ -409,18 +409,22 @@\n ,9,6,7,5\n-%5D%0A\n+%255D%250A\n print(l1\n@@ -424,23 +424,27 @@\n rint(l1)\n-%0A\n+%250A\n l2=l1\n-%0A\n+%250A\n l2.appen\n@@ -447,17 +447,19 @@\n ppend(3)\n-%0A\n+%250A\n print(l2\n@@ -459,23 +459,27 @@\n rint(l2)\n-%0A\n+%250A\n l3=l1\n-%0A\n+%250A\n l3.remov\n@@ -482,17 +482,19 @@\n emove(4)\n-%0A\n+%250A\n print(l3\n@@ -498,28 +498,40 @@\n (l3)\n-%0A\n+%250A\n print(\n-%22%5Cn%22)%0A\n+%2522%255Cn%2522)%250A\n print(\n-%22\n+%2522\n add \n@@ -544,18 +544,28 @@\n ver posi\n-%C3%A7%C3%A3\n+%25C3%25A7%25C3%25A3\n o especi\n@@ -568,19 +568,23 @@\n pecifica\n-%22)%0A\n+%2522)%250A\n #add_e_r\n@@ -599,13 +599,17 @@\n spec\n-%0Al1=%5B\n+%250Al1=%255B\n 1,2,\n@@ -615,18 +615,22 @@\n ,3,5,6,7\n-%5D%0A\n+%255D%250A\n print(l1\n@@ -634,15 +634,19 @@\n (l1)\n-%0A\n+%250A\n l2=l1\n-%0A\n+%250A\n l2.i\n@@ -659,15 +659,19 @@\n 4,8)\n-%0A\n+%250A\n l3=l1\n-%0A\n+%250A\n l3.r\n@@ -678,17 +678,19 @@\n emove(2)\n-%0A\n+%250A\n print(l2\n@@ -697,61 +697,91 @@\n ,l3)\n-%0A\n+%250A\n print(\n-%22%5Cn%22)%0A%0A%0A%0A\n+%2522%255Cn%2522)%250A%250A%250A%250A\n #join\n-%0A\n+%250A\n print(\n-%22\n+%2522\n join\n-%22)%0A\n+%2522)%250A\n n = 10\n-%0A\n+%250A\n l1 = \n-%22 - %22\n+%2522 - %2522\n .joi\n@@ -812,17 +812,19 @@\n 0, n+1))\n-%0A\n+%250A\n print(l1\n@@ -824,29 +824,39 @@\n rint(l1)\n-%0A\n+%250A\n print(\n-%22%5Cn%22)%0A\n+%2522%255Cn%2522)%250A\n #cria_x_\n@@ -865,24 +865,28 @@\n ro-n\n-%0A\n+%250A\n print(\n-%22\n+%2522\n zero a n\n %22)%0Al\n@@ -881,19 +881,23 @@\n zero a n\n-%22)%0A\n+%2522)%250A\n l= list(\n@@ -913,17 +913,19 @@\n -1))\n-%0A\n+%250A\n print(l)\n %0Apri\n@@ -924,52 +924,76 @@\n t(l)\n-%0A\n+%250A\n print(\n-%22%5Cn%22)%0A\n+%2522%255Cn%2522)%250A\n #random\n-%0A\n+%250A\n print(\n-%22\n+%2522\n random\n-%22)%0Al = %5B%5D%0A\n+%2522)%250Al = %255B%255D%250A\n for \n@@ -1009,17 +1009,19 @@\n e(0, 5):\n-%0A\n+%250A\n     l.ap\n@@ -1046,25 +1046,29 @@\n t(1,10))\n-%0A\n+%250A\n print(f\n-%22\n+%2522\n aleatori\n@@ -1070,23 +1070,33 @@\n atorio: \n-%7Bl%7D%22)%0A%0A\n+%257Bl%257D%2522)%250A%250A\n #indicej\n@@ -1105,25 +1105,29 @@\n n python\n-%0A\n+%250A\n print(f\n-%22\n+%2522\n indice 2\n@@ -1132,19 +1132,35 @@\n  2: \n-%7Bl%5B2%5D%7D%22)%0A%0A%0A\n+%257Bl%255B2%255D%257D%2522)%250A%250A%250A\n #for\n@@ -1169,15 +1169,19 @@\n ange\n-%0A\n+%250A\n l1 = \n-%5B\n+%255B\n 1,2,\n@@ -1185,18 +1185,22 @@\n ,2,3,4,5\n-%5D%0A\n+%255D%250A\n n = len(\n@@ -1202,17 +1202,19 @@\n  len(l1)\n-%0A\n+%250A\n for i in\n@@ -1225,17 +1225,19 @@\n ge(0,n):\n-%0A\n+%250A\n     prin\n@@ -1243,41 +1243,69 @@\n nt(f\n-%22-%3E %7Bi%7D %22, end=%22%22)%0Aprint(%22%5Cn%22)%0A%0A%0A\n+%2522-%253E %257Bi%257D %2522, end=%2522%2522)%250Aprint(%2522%255Cn%2522)%250A%250A%250A\n #pro\n@@ -1325,16 +1325,25 @@\n o la\n-%C3%A7o%0A\n+%25C3%25A7o%250A\n l = \n-%5B\n+%255B\n 10, \n@@ -1361,16 +1361,22 @@\n , 50\n-%5D%0A\n+%255D%250A\n i = 0\n-%0A\n+%250A\n f = \n@@ -1385,27 +1385,35 @@\n n(l)\n-%0A\n+%250A\n x = 40\n-%0A\n+%250A\n while i\n-%3Cf:%0A\n+%253Cf:%250A\n     \n@@ -1426,13 +1426,19 @@\n == l\n-%5Bi%5D:%0A\n+%255Bi%255D:%250A\n     \n@@ -1448,17 +1448,19 @@\n  print(f\n-%22\n+%2522\n achei!!!\n@@ -1472,24 +1472,34 @@\n lor \n-%7Bx%7D%5Cn%22)%0A\n+%257Bx%257D%255Cn%2522)%250A\n     i+=1\n %0A#ar\n@@ -1494,17 +1494,19 @@\n     i+=1\n-%0A\n+%250A\n #array_p\n@@ -1513,12 +1513,16 @@\n ares\n-%0Al=%5B\n+%250Al=%255B\n i fo\n@@ -1550,21 +1550,29 @@\n  i%252\n+52\n ==0\n-%5D%0A\n+%255D%250A\n print(f\n-%22\n+%2522\n os e\n@@ -1590,23 +1590,33 @@\n res sao \n-%7Bl%7D%22)%0A%0A\n+%257Bl%257D%2522)%250A%250A\n #indexad\n@@ -1620,14 +1620,18 @@\n xado\n-%0A\n+%250A\n l = \n-%5B\n+%255B\n i**2\n@@ -1657,18 +1657,24 @@\n  11)\n-%5D%0A\n+%255D%250A\n print(f\n-%22\n+%2522\n ao q\n@@ -1685,61 +1685,281 @@\n ado \n-%7Bl%7D%22)%0A%0A#fun%C3%A7%C3%A3o nativa%0Aprint(%22?????%22)%0A#buscar e remover%0A%0A\n+%257Bl%257D%2522)%250A%250A#fun%25C3%25A7%25C3%25A3%0A+@@ -1300,54 +1300,4 @@%250A %252522)%25250A%25250A%250A-#fun%2525C3%2525A7%2525C3%2525A3%0A o nativa%0A %250Apri%0A@@ -57,24 +57,32 @@%0A tiva%0A-%250A%0A+%25250A%0A print(%0A-%2522%0A+%252522%0A ?????%0A-%2522)%250A%0A+%252522)%25250A%0A #bus%0A@@ -94,11 +94,18 @@%0A  remover%0A-%250A%250A%0A+%25250A%25250A%25250A%0A %250A\n %0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-14_00-42-02",
+            "content": "@@ -1348,84 +1348,6 @@\n ver%0A\n-l=%5B6,5,4,3,2,1%5D%0Ax=4%0Al1=l%0Al1= l.remove(x)%0Aprint(f%22lista apos remover %7Bx%7D: %7Bl%7D%22)\n %0A%0A\n",
+            "lines": "97"
+        },
+        {
+            "label": "2025-11-14_01-06-12",
+            "content": "@@ -1,1562 +1,75 @@\n-import random%0A%0Aary=%5B%5D%0Aary= %5B1,2,3,4,5%5D%0Aprint(ary)%0A#tamanhoary%0At= len(ary)%0Aprint(f%22tamanho: %7Bt%7D%5Cn%22)%0A%0A#add_remover_f%0Aprint(%22adicionar e remover final%22)%0Al1=%5B2,4,6,3,9%5D%0Aprint(l1)%0Al2= l1%0Al2.append(8) %0Aprint(l2)%0Al3= l1%0Al3.pop(4)%0Aprint(l3)%0Aprint(%22%5Cn%22)%0A%0A#add_remover.i%0Aprint(%22adicionar e remover inicio%22)%0Al1= %5B4,9,6,7,5%5D%0Aprint(l1)%0Al2=l1%0Al2.append(3)%0Aprint(l2)%0Al3=l1%0Al3.remove(4)%0Aprint(l3)%0Aprint(%22%5Cn%22)%0Aprint(%22add e remover posi%C3%A7%C3%A3o especifica%22)%0A#add_e_remover_espec%0Al1=%5B1,2,3,5,6,7%5D%0Aprint(l1)%0Al2=l1%0Al2.insert(4,8)%0Al3=l1%0Al3.remove(2)%0Aprint(l2,l3)%0Aprint(%22%5Cn%22)%0A%0A%0A%0A#join%0Aprint(%22join%22)%0An = 10%0Al1 = %22 - %22.join(str(i) for i in range(0, n+1))%0Aprint(l1)%0Aprint(%22%5Cn%22)%0A#cria_x_zero-n%0Aprint(%22zero a n%22)%0Al= list(range(0,n-1))%0Aprint(l)%0Aprint(%22%5Cn%22)%0A#random%0Aprint(%22random%22)%0Al = %5B%5D%0Afor i in range(0, 5):%0A    l.append(random.randint(1,10))%0Aprint(f%22aleatorio: %7Bl%7D%22)%0A%0A#indicejoin python%0Aprint(f%22indice 2: %7Bl%5B2%5D%7D%22)%0A%0A%0A#for-range%0Al1 = %5B1,2,3,4,5%5D%0An = len(l1)%0Afor i in range(0,n):%0A    print(f%22-%3E %7Bi%7D %22, end=%22%22)%0Aprint(%22%5Cn%22)%0A%0A%0A#procurar X usando la%C3%A7o%0Al = %5B10, 20, 30 ,40 , 50%5D%0Ai = 0%0Af = len(l)%0Ax = 40%0Awhile i%3Cf:%0A    if  x == l%5Bi%5D:%0A        print(f%22achei!!! o valor %7Bx%7D%5Cn%22)%0A    i+=1%0A#array_pares%0Al=%5Bi for i in range(1,15) if i%252==0%5D%0Aprint(f%22os elementos pares sao %7Bl%7D%22)%0A%0A#indexado%0Al = %5Bi**2  for i in range(1, 11)%5D%0Aprint(f%22ao quadrado %7Bl%7D%22)%0A%0A#fun%C3%A7%C3%A3o nativa%0Aprint(%22?????%22)%0Aprint(%22buscar e remover x%22)%0A#buscar e remover%0Al=%5B6,5,4,3,2,1%5D%0Ax=4%0Al1=l%0Al1= l.remove(x)%0Aprint(f%22lista apos remover %7Bx%7D: %7Bl%7D%22)%0A#remover todos em l%0Al1= %5B1, 2, 3, 2, 4, 2%5D%0Avalor= 2%0A%0Awhile valor in l1:%0A    l1.remove(valor)%0Aprint(l1)%0A\n+@@ -1330,36 +1330,8 @@%0A ?%2522)%250A%0A-print(%2522buscar e remover x%2522)%250A%0A #bus\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-14_01-08-58",
+            "content": "@@ -1476,19 +1476,16 @@\n  l%0Al1= %5B\n-2, \n 1, 2, 3,\n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-11-14_01-09-18",
+            "content": "@@ -1493,18 +1493,16 @@\n 3, 2, 4,\n-4,\n  2%5D%0Avalo\n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-11-14_01-09-27",
+            "content": "@@ -1493,16 +1493,18 @@\n 3, 2, 4,\n+4,\n  2%5D%0Avalo\n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-11-14_01-09-44",
+            "content": "@@ -1475,33 +1475,8 @@\n m l%0A\n-print(%22remover x na l1%22)%0A\n l1= \n",
+            "lines": "109"
+        },
+        {
+            "label": "2025-11-14_01-10-11",
+            "content": "@@ -1585,39 +1585,6 @@\n (l1)\n-%0Aprint(f%22valor removido %7Bvalor%7D%22)\n %0A%0A\n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-11-14_01-10-47",
+            "content": "@@ -1604,17 +1604,16 @@\n removido\n-:\n  %7Bvalor%7D\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-11-14_01-10-53",
+            "content": "@@ -1615,22 +1615,10 @@\n valor%7D%22)\n-%0Aprint(%22%5Cn%22)\n %0A%0A\n",
+            "lines": "111"
+        },
+        {
+            "label": "2025-11-14_01-11-07",
+            "content": "@@ -1451,28 +1451,16 @@\n : %7Bl%7D%22)%0A\n-print(%22%5Cn%22)%0A\n #remover\n@@ -1531,16 +1531,17 @@\n alor= 2%0A\n+%0A\n while va\n@@ -1612,14 +1612,25 @@\n : %7Bvalor%7D%22)%0A\n+print(%22%5Cn%22)\n %0A%0A\n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-14_01-12-36",
+            "content": "import random\n\nary=[]\nary= [1,2,3,4,5]\nprint(ary)\n#tamanhoary\nt= len(ary)\nprint(f\"tamanho: {t}\\n\")\n\n#add_remover_f\nprint(\"adicionar e remover final\")\nl1=[2,4,6,3,9]\nprint(l1)\nl2= l1\nl2.append(8) \nprint(l2)\nl3= l1\nl3.pop(4)\nprint(l3)\nprint(\"\\n\")\n\n#add_remover.i\nprint(\"adicionar e remover inicio\")\nl1= [4,9,6,7,5]\nprint(l1)\nl2=l1\nl2.append(3)\nprint(l2)\nl3=l1\nl3.remove(4)\nprint(l3)\nprint(\"\\n\")\nprint(\"add e remover posi\u00e7\u00e3o especifica\")\n#add_e_remover_espec\nl1=[1,2,3,5,6,7]\nprint(l1)\nl2=l1\nl2.insert(4,8)\nl3=l1\nl3.remove(2)\nprint(l2,l3)\nprint(\"\\n\")\n\n\n\n#join\nprint(\"join\")\nn = 10\nl1 = \" - \".join(str(i) for i in range(0, n+1))\nprint(l1)\nprint(\"\\n\")\n#cria_x_zero-n\nprint(\"zero a n\")\nl= list(range(0,n-1))\nprint(l)\nprint(\"\\n\")\n#random\nprint(\"random\")\nl = []\nfor i in range(0, 5):\n    l.append(random.randint(1,10))\nprint(f\"aleatorio: {l}\")\n\n#indicejoin python\nprint(f\"indice 2: {l[2]}\")\n\n\n#for-range\nl1 = [1,2,3,4,5]\nn = len(l1)\nfor i in range(0,n):\n    print(f\"-> {i} \", end=\"\")\nprint(\"\\n\")\n\n\n#procurar X usando la\u00e7o\nl = [10, 20, 30 ,40 , 50]\ni = 0\nf = len(l)\nx = 40\nwhile i<f:\n    if  x == l[i]:\n        print(f\"achei!!! o valor {x}\\n\")\n    i+=1\n#array_pares\nl=[i for i in range(1,15) if i%2==0]\nprint(f\"os elementos pares sao {l}\")\n\n#indexado\nl = [i**2  for i in range(1, 11)]\nprint(f\"ao quadrado {l}\")\n\n#fun\u00e7\u00e3o nativa\nprint(\"?????\")\nprint(\"buscar e remover x\")\n#buscar e remover\nl=[6,5,4,3,2,1]\nx=4\nl1=l\nl1= l.remove(x)\nprint(f\"lista apos remover {x}: {l}\")\nprint(\"\\n\")\n#remover todos em l\nprint(\"remover x na l1\")\nl1= [2, 1, 2, 3, 2, 4, 2]\nvalor= 2\nwhile valor in l1:\n    l1.remove(valor)\nprint(l1)\nprint(f\"valor removido: {valor}\")\n\n\n",
+            "lines": "112"
         }
     ]
 }

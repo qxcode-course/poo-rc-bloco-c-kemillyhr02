@@ -49,7 +49,11 @@ n = 10
 l1 = " - ".join(str(i) for i in range(0, n+1))
 print(l1)
 print("\n")
-
+#cria_x_zero-n
+print("zero a n")
+l= list(range(0,n-1))
+print(l)
+print("\n")
 #random
 print("random")
 l = []
@@ -69,7 +73,7 @@ for i in range(0,n):
 print("\n")
 
 
-#procurar X
+#procurar X usando laço
 l = [10, 20, 30 ,40 , 50]
 i = 0
 f = len(l)
@@ -85,4 +89,24 @@ print(f"os elementos pares sao {l}")
 #indexado
 l = [i**2  for i in range(1, 11)]
 print(f"ao quadrado {l}")
+
+#função nativa
+print("?????")
+print("buscar e remover x")
+#buscar e remover
+l=[6,5,4,3,2,1]
+x=4
+l1=l
+l1= l.remove(x)
+print(f"lista apos remover {x}: {l}")
+print("\n")
+#remover todos em l
+print("remover x na l1")
+l1= [2, 1, 2, 3, 2, 4, 2]
+valor= 2
+while valor in l1:
+    l1.remove(valor)
+print(l1)
+print(f"valor removido: {valor}")
+
 
