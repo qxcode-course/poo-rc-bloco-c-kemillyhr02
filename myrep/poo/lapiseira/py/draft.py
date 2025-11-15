@@ -11,7 +11,10 @@ class Grafite:
         if self.__hardness == "4B":
             return 4
         if self.__hardness == "6B":
-            return 6
+            return 6 
+        elif self.__hardness == "10B":
+            return 10
+
         
     def set_size(self, size: int):
         self.__size = size
@@ -31,9 +34,10 @@ class Grafite:
 class Lapiseira:
     def __init__(self, thickness: float = 0, grafite:Grafite | None = None):
         self.__thickess = thickness
-        self.__grafite = grafite
+        self.__grafite = grafite 
+        self.__tambor = []
 
-    def hasGrafite(self) ->bool:
+    def hasGrafite(self):
         return self.__grafite != None
 
     def insert(self, grafite:Grafite):
@@ -43,7 +47,18 @@ class Lapiseira:
         if(self.hasGrafite()):
             print("fail: ja existe grafite")
             return 
-        self.__grafite = grafite
+        
+        self.__tambor.append(grafite) 
+    def pull(self):
+        if self.__grafite is not None: 
+            print ("fail: já existe grafite no bico")
+            return
+        if len(self.__tambor) ==0:
+            print("fail: não existe grafite no tambor")
+            return
+        self.__tambor=self.__grafite[0]
+        
+        
 
         
     def remove(self):
