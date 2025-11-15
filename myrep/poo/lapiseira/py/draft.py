@@ -68,7 +68,7 @@ class Lapiseira:
         self.__grafite.set_size(self.__grafite.get_size() - n)
 
     def __str__(self):
-        return f"calibre: {self.__thickness}, grafite: {"null" if self.__grafite == None else self.__grafite}"
+        return f"calibre: {self.__thickess}, grafite: {"null" if self.__grafite == None else self.__grafite}"
     
 def main():
     lapiseira= Lapiseira()
@@ -83,7 +83,7 @@ def main():
         elif args[0] == "show":
             print(lapiseira)
         elif args[0]=="insert":
-            grafite = Grafite(float(args[1], args[2], int(args[3])))
+            grafite = Grafite(float(args[1]), args[2], int(args[3]))
             lapiseira.insert(grafite)
         elif args[0] == "remove":
             lapiseira.remove()
