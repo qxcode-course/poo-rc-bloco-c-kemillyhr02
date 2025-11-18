@@ -20,6 +20,13 @@ class Cinema:
         self.__search = [None]*capacidade
         self.__verifyIndex = capacidade
 
+    def __str__(self):
+        print("[", end="")
+        ky=" ".join("-" if i is None else str(i)for i in self.__seats)
+        ky+="]"
+        return ky
+    
+
     def reserve(self, id: str, phone:int, index:int):
         if index <0 or index>= self.__verifyIndex:
             print("fail: cadeira nao existe")
@@ -32,22 +39,16 @@ class Cinema:
         client = Client(id, phone)
         self.__seats[index] = client
         self.__search.append(client.getId())
-        return True
+        return 
     def cancel(self, id:str):
         if id not in self.__search:
             print("fail: cliente nao esta no cinema")
-            return False
+            return 
         self.__search.remove(id)
         for i, cliente in enumerate(self.__seats):
             if cliente.getId()== id:
                 self.__seats[i] = None
                 return 
-            
-    def __str__(self):
-        print("[", end="")
-        ky=" ".join("-" if i is None else str(i)for i in self.__seats)
-        ky+="]"
-        return ky
     
 def main():
     cinema=Cinema(0)
